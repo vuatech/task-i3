@@ -5,8 +5,9 @@
 %global bumpver 1
 
 Name:		task-i3
-Version:	0~%{bumpver}.git%{shortcommit}
-Release:	2
+Version: 1.0
+#Version:	0~%{bumpver}.git%{shortcommit}
+Release:	1
 Source0:	https://github.com/klejdiLOL/task-i3/archive/refs/heads/main.zip
 #https://github.com/vuatech/i3-Dotfiles-OM-personal_only-/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Summary:	i3 configuration's required packages 'n DIRs
