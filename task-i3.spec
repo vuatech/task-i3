@@ -8,7 +8,7 @@ Name:		task-i3
 Version: 1.0
 #Version:	0~%{bumpver}.git%{shortcommit}
 Release:	1
-Source0:	https://github.com/klejdiLOL/task-i3/archive/refs/heads/main.zip
+Source0:	https://github.com/vuatech/task-i3/archive/refs/heads/main.zip
 #https://github.com/vuatech/i3-Dotfiles-OM-personal_only-/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Summary:	i3 configuration's required packages 'n DIRs
 URL:		https://github.com/klejdiLOL/task-i3
@@ -84,31 +84,31 @@ install -Dm 775 .config/polybar/scripts/rofi/styles.rasi %{buildroot}%{_sysconfd
 
 install -d %{buildroot}%{_sysconfdir}/xdg/conky %{buildroot}%{_sysconfdir}/xdg/dunst %{buildroot}%{_sysconfdir}/xdg/i3 %{buildroot}%{_sysconfdir}/xdg/i3lock-color/scripts %{buildroot}%{_sysconfdir}/xdg/kitty %{buildroot}%{_sysconfdir}/xdg/micro/colorschemes %{buildroot}%{_sysconfdir}/xdg/picom %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi %{buildroot}%{_sysconfdir}/xdg/rofi/rofi %{buildroot}%{_bindir}
 install -d %{buildroot}%{_sysconfdir}/xdg/.local/share/color-schemes %{buildroot}%{_sysconfdir}/xdg/.local/share/fonts
-install -Dm 775 conky/conky-launch.sh %{buildroot}%{_sysconfdir}/xdg/conky/conky-launch.sh
-install -Dm 775 conky/conky.conf %{buildroot}%{_sysconfdir}/xdg/conky/conky.conf
-install -Dm 775 i3/config %{buildroot}%{_sysconfdir}/xdg/i3/config
-install -Dm 775 i3lock-color/scripts/lockscreen.sh %{buildroot}%{_sysconfdir}/xdg/i3lock-color/scripts/lockscreen.sh
-install -Dm 775 kitty/kitty.conf %{buildroot}%{_sysconfdir}/xdg/kitty/kitty.conf
-install -Dm 775 micro/info-settings.json-file.txt %{buildroot}%{_sysconfdir}/xdg/micro/info-settings.json-file.txt
-install -Dm 775 micro/settings.json %{buildroot}%{_sysconfdir}/xdg/micro/settings.json
-install -Dm 775 micro/colorschemes/om-dark.micro %{buildroot}%{_sysconfdir}/xdg/micro/colorschemes/om-dark.micro
-install -Dm 775 picom/picom.conf %{buildroot}%{_sysconfdir}/xdg/picom/picom.conf
-install -Dm 775 dunst/dunstrc %{buildroot}%{_sysconfdir}/xdg/dunst/dunstrc
+install -Dm 775 .config/conky/conky-launch.sh %{buildroot}%{_sysconfdir}/xdg/conky/conky-launch.sh
+install -Dm 775 .config/conky/conky.conf %{buildroot}%{_sysconfdir}/xdg/conky/conky.conf
+install -Dm 775 .config/i3/config %{buildroot}%{_sysconfdir}/xdg/i3/config
+install -Dm 775 .config/i3lock-color/scripts/lockscreen.sh %{buildroot}%{_sysconfdir}/xdg/i3lock-color/scripts/lockscreen.sh
+install -Dm 775 .config/kitty/kitty.conf %{buildroot}%{_sysconfdir}/xdg/kitty/kitty.conf
+install -Dm 775 .config/micro/info-settings.json-file.txt %{buildroot}%{_sysconfdir}/xdg/micro/info-settings.json-file.txt
+install -Dm 775 .config/micro/settings.json %{buildroot}%{_sysconfdir}/xdg/micro/settings.json
+install -Dm 775 .config/micro/colorschemes/om-dark.micro %{buildroot}%{_sysconfdir}/xdg/micro/colorschemes/om-dark.micro
+install -Dm 775 .config/picom/picom.conf %{buildroot}%{_sysconfdir}/xdg/picom/picom.conf
+install -Dm 775 .config/dunst/dunstrc %{buildroot}%{_sysconfdir}/xdg/dunst/dunstrc
 
-install -Dm 775 polybar/colors.ini %{buildroot}%{_sysconfdir}/xdg/polybar/colors.ini
-install -Dm 775 polybar/config.ini %{buildroot}%{_sysconfdir}/xdg/polybar/config.ini
-install -Dm 775 polybar/launch.sh %{buildroot}%{_sysconfdir}/xdg/polybar/launch.sh
-install -Dm 775 polybar/modules.ini %{buildroot}%{_sysconfdir}/xdg/polybar/modules.ini
-install -Dm 775 polybar/extra_modules.ini %{buildroot}%{_sysconfdir}/xdg/polybar/extra_modules.ini
-install -Dm 775 polybar/scripts/launcher.sh %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/launcher.sh
-install -Dm 775 polybar/scripts/powermenu.sh %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/powermenu.sh
-install -Dm 775 polybar/scripts/rofi/colors.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/colors.rasi
-install -Dm 775 polybar/scripts/rofi/confirm.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/confirm.rasi
-install -Dm 775 polybar/scripts/rofi/launcher.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/launcher.rasi
-install -Dm 775 polybar/scripts/rofi/message.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/message.rasi
-install -Dm 775 polybar/scripts/rofi/networkmenu.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/networkmenu.rasi
-install -Dm 775 polybar/scripts/rofi/powermenu.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/powermenu.rasi
-install -Dm 775 polybar/scripts/rofi/styles.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/styles.rasi
+install -Dm 775 .config/polybar/colors.ini %{buildroot}%{_sysconfdir}/xdg/polybar/colors.ini
+install -Dm 775 .config/polybar/config.ini %{buildroot}%{_sysconfdir}/xdg/polybar/config.ini
+install -Dm 775 .config/polybar/launch.sh %{buildroot}%{_sysconfdir}/xdg/polybar/launch.sh
+install -Dm 775 .config/polybar/modules.ini %{buildroot}%{_sysconfdir}/xdg/polybar/modules.ini
+install -Dm 775 .config/polybar/extra_modules.ini %{buildroot}%{_sysconfdir}/xdg/polybar/extra_modules.ini
+install -Dm 775 .config/polybar/scripts/launcher.sh %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/launcher.sh
+install -Dm 775 .config/polybar/scripts/powermenu.sh %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/powermenu.sh
+install -Dm 775 .config/polybar/scripts/rofi/colors.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/colors.rasi
+install -Dm 775 .config/polybar/scripts/rofi/confirm.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/confirm.rasi
+install -Dm 775 .config/polybar/scripts/rofi/launcher.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/launcher.rasi
+install -Dm 775 .config/polybar/scripts/rofi/message.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/message.rasi
+install -Dm 775 .config/polybar/scripts/rofi/networkmenu.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/networkmenu.rasi
+install -Dm 775 .config/polybar/scripts/rofi/powermenu.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/powermenu.rasi
+install -Dm 775 .config/polybar/scripts/rofi/styles.rasi %{buildroot}%{_sysconfdir}/xdg/polybar/scripts/rofi/styles.rasi
 
 #install -Dm 775 install-i3-theme %{buildroot}%{_bindir}/install-i3-theme
 
@@ -123,7 +123,7 @@ install -Dm 775 .local/share/fonts/feather.ttf %{buildroot}%{_sysconfdir}/skel/.
 %files
 %dir %{_sysconfdir}/skel/.config
 %dir %{_sysconfdir}/skel/.local/share
-%{_bindir}/install-i3-theme
+#%{_bindir}/install-i3-theme
 %{_sysconfdir}/skel/.config/conky
 %{_sysconfdir}/skel/.config/i3
 %{_sysconfdir}/skel/.config/i3lock-color
@@ -135,5 +135,20 @@ install -Dm 775 .local/share/fonts/feather.ttf %{buildroot}%{_sysconfdir}/skel/.
 %{_sysconfdir}/skel/.config/rofi
 %{_sysconfdir}/skel/.local/share/color-schemes
 %{_sysconfdir}/skel/.local/share/fonts
-
+%{_sysconfdir}/xdg/conky/conky-launch.sh
+%{_sysconfdir}/xdg/conky/conky.conf
+%{_sysconfdir}/xdg/dunst/dunstrc
+%{_sysconfdir}/xdg/i3/config
+%{_sysconfdir}/xdg/i3lock-color/scripts/lockscreen.sh
+%{_sysconfdir}/xdg/kitty/kitty.conf
+%{_sysconfdir}/xdg/micro/colorschemes/om-dark.micro
+%{_sysconfdir}/xdg/micro/info-settings.json-file.txt
+%{_sysconfdir}/xdg/micro/settings.json
+%{_sysconfdir}/xdg/picom/picom.conf
+%{_sysconfdir}/xdg/polybar/colors.ini
+%{_sysconfdir}/xdg/polybar/config.ini
+%{_sysconfdir}/xdg/polybar/extra_modules.ini
+%{_sysconfdir}/xdg/polybar/launch.sh
+%{_sysconfdir}/xdg/polybar/modules.ini
+%{_sysconfdir}/xdg/polybar/scripts/
 
